@@ -1,0 +1,49 @@
+$hilite: #00b0b6;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+input {
+  appearance: none;
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: solid 1px #666;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  &:focus {
+    border-width: 2px;
+    border-color: $hilite;
+    background-color: lighten($hilite, 62%);
+  }
+}
+
+button {
+  appearance: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: $hilite;
+  color: white;
+  border-radius: 3px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
